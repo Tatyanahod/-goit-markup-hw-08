@@ -25,7 +25,6 @@
     text-transform: uppercase;
 
 }
-
 .button {
     margin-top: 0;
     display: inline-block;
@@ -42,7 +41,6 @@
     border: none;
     border-radius: 6px;
 }
-
 .scroll__list {
     margin-top: 0;
     display: flex;
@@ -98,7 +96,6 @@
     line-height: 1.7;
     color: var(--dop-text-color);
 }
-
 .technologies__title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -111,8 +108,7 @@
     display: flex;
     padding-bottom: 94px;
 }
-
-.technologies-image {
+.technologies-image{
     display: block;
 }
 
@@ -146,7 +142,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .section.data {
     background-color: var(--secondary-background-color);
     padding-bottom: 94px;
@@ -166,10 +161,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-text-color);
-
     &:last-child {
-        margin-right: 0;
-    }
+            margin-right: 0;
+        }
 }
 
 
@@ -203,7 +197,6 @@
     line-height: 1.16;
     text-align: center;
 }
-
 .sked__titel {
     font-family: 'Roboto';
     font-style: normal;
@@ -276,8 +269,7 @@
     margin-right: 10px;
 }
 
-.icon__link,
-.address__link {
+.icon__link, .address__link{
     display: block;
     background-color: #FFFFFF;
     height: 44px;
@@ -308,7 +300,7 @@
 }
 
 .icon__link:hover .icon__image,
-.icon__link:focus .icon__image {
+.icon__link:focus .icon__image{
     fill: var(--white-text-color);
 
 }
@@ -320,7 +312,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list__icon.address .icon__img {
+.list__icon.address .icon__img{
     height: 20px;
     width: 20px;
     fill: var(--white-text-color);
@@ -343,7 +335,6 @@
     padding-top: 0;
     margin-top: 0;
 }
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -460,7 +451,7 @@
 .form-button {
     width: 200px;
     height: 50px;
-   
+    margin-top: 30px;
     margin-left: 105px;
     margin-bottom: 40px;
     display: inline-block;
@@ -527,7 +518,7 @@
     margin-right: 10px;
 }
 
-.chekbox:checked+.checkbox-icon {
+.chekbox:checked +.checkbox-icon {
     background-color: var(--accent-color);
     background-image: url(../images/fullcheck.svg);
     background-size: contain;
