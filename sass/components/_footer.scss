@@ -116,12 +116,18 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 60px;
-
+    width: 100%;
     padding-bottom: 60px;
-    display: flex;
-    justify-content: flex-start;
+   
+   
     margin: auto;
-    width: 1200px;
+    
     padding-left: 15px;
     padding-right: 15px;
+    
+    @media screen and (min-width:1200px) {
+            width: 1200px;
+            display: flex;
+                justify-content: flex-start;
+        }
 }
