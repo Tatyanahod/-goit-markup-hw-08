@@ -736,11 +736,16 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+  margin-left: 83px;
+}
+@media screen and (min-width: 1200px) {
+  .sked__titel {
+    text-align: center;
+  }
 }
 
 .section.sked {
@@ -752,6 +757,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sked__item {
