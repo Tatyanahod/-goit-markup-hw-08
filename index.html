@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 
@@ -11,9 +12,9 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-
 <body class="page">
     <!--шапка-->
     <header>
@@ -36,8 +37,64 @@
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="menu-container">
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg class="menu-close-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="./index.html" class="mob-link-current">Студія</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="./portfolio.html" class="mob-link">Портфоліо</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="mob-link">Контакти</a>
+                    </li>
+                </ul>
+        
+                <ul class="menu-contacts">
+                    <li class="menu-contacts__tel">
+                        <a href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-contacts__mail">
+                        <a href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+        
+                <ul class="menu-soc">
+                    <li class="menu-soc__item">
+                        <a href="#" class="menu-soc__link">Instagram</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="#" class="menu-soc__link">Twitter</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="#" class="menu-soc__link">Facebook</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="#" class="menu-soc__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+    
     <main class="main">
         <!--baner-->
         <section class="section combination">
@@ -138,8 +195,22 @@
                 <h2 class="data__titel">Наша команда</h2>
                 <ul class="data__list">
                     <li class="data__discription">
-                        <img src="./images/img.jpg" class="data__image" width="270"
-                            alt="Ігор Дем'яненко - Product Designer">
+                    <picture>
+                        <source srcset="
+                                        ./images/img.jpg    1x ,
+                                        ./images/img-2x.jpg 2x 
+                                      " media="(min-width: 1200px) " width="270px"/>
+                        <source srcset="
+                                        ./images/img-tab.jpg    1x,
+                                        ./images/img-tab-2x.jpg 2x
+                                      " media="(min-width: 768px)"  width="354px"/>
+                        <source srcset="
+                                        ./images/img-mob.jpg    1x,
+                                        ./images/img-mob-2x.jpg 2x
+                                      " media="(max-width: 767px)" />
+                        <img src="./images/img-mob.jpg" alt="Ігор Дем'яненко" width="450px" />
+                    </picture>
+
                         <div class="data__property">
                             <h3 class="data__caption">Ігор Дем'яненко</h3>
                             <p class="data__text">Product Designer</p>
@@ -173,8 +244,21 @@
                         </div>
                     </li>
                     <li class="data__discription">
-                        <img src="./images/img2.jpg" class="data__image" width="270"
-                            alt="Ольга Рєпіна - Frontend Developer">
+                        <picture>
+                            <source srcset="
+                                                                ./images/img2.jpg    1x ,
+                                                                ./images/img2-2x.jpg 2x 
+                                                              " media="(min-width: 1200px) " width="270px" />
+                            <source srcset="
+                                                                ./images/img2-tab.jpg    1x,
+                                                                ./images/img2-tab-2x.jpg 2x
+                                                              " media="(min-width: 768px)" width="354px" />
+                            <source srcset="
+                                                                ./images/img2-mob.jpg    1x,
+                                                                ./images/img2-mob-2x.jpg 2x
+                                                              " media="(max-width: 767px)" />
+                            <img src="./images/img2-mob.jpg" alt="Ольга Рєпіна" width="450px" />
+                        </picture>
                         <div class="data__property">
                             <h3 class="data__caption">Ольга Рєпіна</h3>
                             <p class="data__text">Frontend Developer</p>
@@ -208,7 +292,21 @@
                         </div>
                     </li>
                     <li class="data__discription">
-                        <img src="./images/img3.jpg" class="data__image" width="270" alt="Микола Тарасов - Marketing">
+                        <picture>
+                            <source srcset="
+                                                                ./images/img3.jpg    1x ,
+                                                                ./images/img3-2x.jpg 2x 
+                                                              " media="(min-width: 1200px) " width="270px" />
+                            <source srcset="
+                                                                ./images/img3-tab.jpg    1x,
+                                                                ./images/img3-tab-2x.jpg 2x
+                                                              " media="(min-width: 768px)" width="354px" />
+                            <source srcset="
+                                                                ./images/img3-mob.jpg    1x,
+                                                                ./images/img3-mob-2x.jpg 2x
+                                                              " media="(max3-width: 767px)" />
+                            <img src="./images/img3-mob.jpg" alt="Микола Тарасов" width="450px" />
+                        </picture>
                         <div class="data__property">
                             <h3 class="data__caption">Микола Тарасов</h3>
                             <p class="data__text">Marketing</p>
@@ -242,8 +340,22 @@
                         </div>
                     </li>
                     <li class="data__discription">
-                        <img src="./images/img4.jpg" class="data__image" width="270"
-                            alt="Михайло Єрмаков - UI Designer">
+                    <picture>
+                        <source srcset="
+                                                            ./images/img4.jpg    1x ,
+                                                            ./images/img4-2x.jpg 2x 
+                                                          " media="(min-width: 1200px) " width="270px" />
+                        <source srcset="
+                                                            ./images/img4-tab.jpg    1x,
+                                                            ./images/img4-tab-2x.jpg 2x
+                                                          " media="(min-width: 768px)" width="354px" />
+                        <source srcset="
+                                                            ./images/img4-mob.jpg    1x,
+                                                            ./images/img4-mob-2x.jpg 2x
+                                                          " media="(max-width: 767px)" />
+                        <img src="./images/img4-mob.jpg" alt="Михайло Єрмаков" width="450px" />
+                    </picture>
+                           
                         <div class="data__property">
                             <h3 class="data__caption">Михайло Єрмаков</h3>
                             <p class="data__text">UI Designer</p>
@@ -363,7 +475,7 @@
             </div>
             <div class="address__form">
                 <h2>Підпишіться на розсилку</h2>
-                <form>
+                <form class="footer-form">
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail">
                     <button type="submit"><span class="button-text">Підписатися</span><span class="button-svg"><svg>
@@ -425,6 +537,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

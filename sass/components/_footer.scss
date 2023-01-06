@@ -9,33 +9,105 @@
     letter-spacing: 0.03em;
     padding-bottom: 20px;
     margin-bottom: 0;
+    // text-align: center;
+    // margin-left: 167px;
 }
+
 
 .address {
     background-color: #2F303A;
+    // padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
 }
 
 .address__cont {
-    width: 206px;
+    
     margin-left: 70px;
+    margin-bottom: 60px;
+        justify-content: center;
+    
+        @media screen and (min-width:768px) {
+            margin-left: 165px;
+            width: 206px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            margin-left: 70px;
+            margin-bottom: 0;
+        }
 }
 
 .conteiner__address {
-    width: 231px;
-}
+    // width: 231px;
+    
+            text-align: center;
+            margin-bottom: 60px;
+    
+        @media screen and (min-width:768px) {
+                margin-left: 76px;
+            }
+    
+        @media screen and (min-width:1200px) {
+                margin-bottom: 0;
+                margin-left: 0;
+                text-align: left;
+            }
+        }
 
+.list__icon.address{
+    margin-top: 0;
+    display: flex;
+    padding-left: 0;
+        }
+     
+// .list__item{
+//     width: 44px;
+//         height: 44px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+// }
 .conteiner__address li {
-    margin-bottom: 12px;
+    font-family:'Roboto';
+        font-style:normal;
+        font-weight:400;
+        font-size:14px;
+        line-height: 1.71;
+    letter-spacing: 0.03em;
+   
 
-    &:last-child {
-        margin-bottom: 0;
+    &:first-child {
+        margin-bottom: 9px;
+    }
+
+    & a {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    & a:hover,
+    & a:focus {
+        color: var(--accent-color);
     }
 }
 
+
 .address__form {
-    width: 570px;
+    // width: 570px;
     height: 86px;
     margin-left: 94px;
+    
+    
+            @media screen and (min-width:768px){
+                margin-right: auto;
+                margin-left: auto;
+            }
+    
+            @media screen and (min-width:1200px) {
+                margin-left: 90px;
+            }
+    
+        
 }
 
 .address__form h2 {
@@ -47,9 +119,19 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+    @media screen and (min-width:1200px) {
+            text-align: left;
+        }
 }
+.footer-form {
+    display: block;
 
+    @include desktop {
+        display: flex;
+    }
+}
 .address__form input {
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -58,6 +140,7 @@
     background-color: #2F303A;
     color: #AFB1B8;
     padding-left: 16px;
+   
 }
 
 .address__form button {
@@ -78,8 +161,36 @@
     color: #FFFFFF;
     margin-left: 10px;
     position: relative;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+        }
 }
-
+.address__link{
+    width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: var(--total-white);
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        
+        &:focus {
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            color: var(--total-white);
+        }
+}
 .address__form svg {
 
     width: 24px;
@@ -113,6 +224,24 @@
 }
 
 .conteiner-first {
+   
+           
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            @media screen and (min-width: 480px) {
+                max-width: 480px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                max-width: 768px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                max-width: 1200px;
+            }
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 60px;
@@ -120,14 +249,20 @@
     padding-bottom: 60px;
    
    
-    margin: auto;
+   
     
-    padding-left: 15px;
-    padding-right: 15px;
+   
+    align-items: baseline;
     
-    @media screen and (min-width:1200px) {
-            width: 1200px;
+        @media screen and (min-width:768px){
             display: flex;
-                justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: baseline;
         }
+    
+                @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
+    
+ 
 }

@@ -4,17 +4,37 @@ ul {
     list-style: none;
 }
 .conteiner {
-    margin: auto;
-    margin-top: 0;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
+    
     &.nav {
             @extend %flex-align;
         }
 }
 .section {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    
     &.combination {
             text-align: center;
             margin-top: 0;
