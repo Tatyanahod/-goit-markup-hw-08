@@ -9,7 +9,8 @@
     letter-spacing: 0.03em;
     padding-bottom: 20px;
     margin-bottom: 0;
-    // text-align: center;
+    @media screen and (min-width: 480px) and (max-width:767px){
+    text-align: center;}
     // margin-left: 167px;
 }
 
@@ -23,14 +24,16 @@
 
 .address__cont {
     
-    margin-left: 70px;
-    margin-bottom: 60px;
+    // margin-left: 70px;
+    // margin-bottom: 60px;
         justify-content: center;
+        // text-align: center;
+     
     
         @media screen and (min-width:768px) {
-            margin-left: 165px;
-            width: 206px;
-        }
+            margin-left: 165px;}
+        //     width: 206px;
+        // }
     
         @media screen and (min-width:1200px) {
             margin-left: 70px;
@@ -59,6 +62,7 @@
     margin-top: 0;
     display: flex;
     padding-left: 0;
+    padding-right: 0;
         }
      
 // .list__item{
@@ -96,11 +100,13 @@
     // width: 570px;
     height: 86px;
     margin-left: 94px;
-    
+  
+  
     
             @media screen and (min-width:768px){
                 margin-right: auto;
                 margin-left: auto;
+                
             }
     
             @media screen and (min-width:1200px) {
@@ -119,12 +125,16 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
+    text-align: center;
+    align-items: center;
     @media screen and (min-width:1200px) {
             text-align: left;
         }
 }
 .footer-form {
-    display: block;
+    display: flex;
+    @media screen and (min-width:480px)and (max-width: 1199px){
+    flex-direction: column;}
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -160,17 +170,18 @@
     line-height: 30px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    margin-left: 10px;
+    // margin-left: 10px;
     position: relative;
     display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 0;
+        margin-left: 45px;
         margin-top: 20px;
     
         @media screen and (min-width:1200px) {
             margin-top: 0;
+            margin-left: 12px;
         }
 }
 .address__link{
@@ -226,44 +237,68 @@
 
 .conteiner-first {
    
+        width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding-bottom: 60px;
+            padding-top: 60px;
            
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
+            // padding-left: 15px;
+            // padding-right: 15px;
+            // margin-left: auto;
+            // margin-right: auto;
+            // display: flex;
+            // justify-content: space-between;
     
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 480px) and (max-width: 1199px){
                 max-width: 480px;
+                flex-direction: column;
             }
     
             @media screen and (min-width: 768px) {
                 max-width: 768px;
+                
+             
             }
     
             @media screen and (min-width: 1200px) {
                 max-width: 1200px;
+                margin-top: 0;
+                    margin-bottom: 0;
+                    
+                    width: 100%;
+                   
             }
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 60px;
-    width: 100%;
-    padding-bottom: 60px;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    // padding-top: 60px;
+    // width: 100%;
+    // padding-bottom: 60px;
    
    
    
     
    
-    align-items: baseline;
+    // align-items: baseline;
     
-        @media screen and (min-width:768px){
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-        }
+        // @media screen and (min-width:768px){
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     align-items: baseline;
+        // }
     
-                @media screen and (min-width:1200px) {
-            flex-wrap: nowrap;
-        }
+        //         @media screen and (min-width:1200px) {
+        //     flex-wrap: nowrap;
+        // }
     
  
+}
+.footer__left{
+display: flex;
+
+// width: 50%;
+justify-content: space-between;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-direction: column;
+    }
 }

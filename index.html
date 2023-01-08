@@ -19,7 +19,8 @@
     <!--шапка-->
     <header>
         <div class="conteiner nav">
-            <a class="logo" href="./index.html"> <span class="part-logo">Web</span>Studio</a>
+            <div class="inner-wrapper">
+                <a class="logo" href="./index.html"> <span class="part-logo">Web</span>Studio</a>
             <nav>
                 <ul class="list__nav">
                     <li class="nav__item"> <a href="./index.html" class="link__current link__nav">Студія</a></li>
@@ -27,6 +28,8 @@
                     <li class="nav__item"> <a href="" class="link__nav">Контакти</a></li>
                 </ul>
             </nav>
+        </div>
+           
 
             <ul class="contacts">
                 <li class="contacts__item"><a href="mailto:info@devstudio.com" class="link__contacts"><svg
@@ -248,11 +251,12 @@
                             <source srcset="
                                                                 ./images/img2.jpg    1x ,
                                                                 ./images/img2-2x.jpg 2x 
-                                                              " media="(min-width: 1200px) " width="270px" />
+                                                              " media="(min-width: 1200px) " 
+                                                              sizes= "270px" />
                             <source srcset="
                                                                 ./images/img2-tab.jpg    1x,
                                                                 ./images/img2-tab-2x.jpg 2x
-                                                              " media="(min-width: 768px)" width="354px" />
+                                                              " media="(min-width: 768px)" sizes= "354px" />
                             <source srcset="
                                                                 ./images/img2-mob.jpg    1x,
                                                                 ./images/img2-mob-2x.jpg 2x
@@ -430,12 +434,12 @@
     <!--contacts-->
     <footer class="address">
         <div class="conteiner-first">
-            <div class="conteiner__address">
+            <div class="footer__left">
+                <div class="conteiner__address">
                 <a class="logo address" href=""> <span class="part-logo">Web</span>Studio</a>
                 <address>
                     <ul class="address__list">
-                        <li><a href="https://goo.gl/maps/1TkGLcMhs1NXqYy18" target="_blank"
-                                rel="noreferrer noopener nofollow">
+                        <li><a href="https://goo.gl/maps/1TkGLcMhs1NXqYy18" target="_blank" rel="noreferrer noopener nofollow">
                                 <span>м. Київ, пр-т Лесі Українки, 26</span> </a></li>
                         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -445,7 +449,7 @@
             <div class="address__cont">
                 <h2 class="conteiner__titel"> Приєднуйтесь</h2>
                 <ul class="list__icon address">
-
+            
                     <li class="list__item"> <a href="https://www.instagram.com" class="address__link" target="_blank"
                             rel="noreferrer noopener"> <svg class="icon__img">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
@@ -469,10 +473,12 @@
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
-
+            
                     </li>
                 </ul>
             </div>
+        </div>
+           
             <div class="address__form">
                 <h2>Підпишіться на розсилку</h2>
                 <form class="footer-form">
