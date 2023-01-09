@@ -76,7 +76,7 @@
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -88,12 +88,17 @@
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .link__nav {
+    font-size: 14px;
+  }
+}
 
 .link__contacts {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--dop-text-color);
@@ -103,6 +108,11 @@
 .link__contacts:hover, .link__contacts:focus {
   fill: #2196F3;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .link__contacts {
+    font-size: 14px;
+  }
 }
 
 .contacts__item:hover,
@@ -372,12 +382,10 @@ ul {
 }
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 .section.combination {
@@ -1082,6 +1090,11 @@ img {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .conteiner.data {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .conteiner.data {
     width: 1200px;
@@ -1134,27 +1147,35 @@ img {
 
 .data__titel {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .data__titel {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .sked__titel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-top: 0;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
-  margin-left: 83px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .sked__titel {
     text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1171,7 +1192,7 @@ img {
 }
 
 .sked__item {
-  margin-top: 20px;
+  margin-top: 30px;
   height: 92px;
   width: calc((100% - 30px) / 2);
 }
