@@ -18,7 +18,7 @@
 <body class="page portfolio">
     <!--шапка-->
 
-    <header>
+    <header class="page-header port">
 
         <div class="conteiner nav">
             <a class="logo" href="./index.html"> <span class="part-logo">Web</span>Studio</a>
@@ -269,52 +269,55 @@
     </main>
     <footer class="address">
         <div class="conteiner-first">
-            <div class="conteiner__address">
-                <a class="logo address" href=""> <span class="part-logo">Web</span>Studio</a>
-                <address>
-                    <ul class="address__list">
-                        <li><a href="https://goo.gl/maps/1TkGLcMhs1NXqYy18" target="_blank"
-                                rel="noreferrer noopener nofollow">
-                                <span>м. Київ, пр-т Лесі Українки, 26</span> </a></li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <div class="footer__left">
+                <div class="conteiner__address">
+                    <a class="logo address" href=""> <span class="part-logo">Web</span>Studio</a>
+                    <address>
+                        <ul class="address__list">
+                            <li><a href="https://goo.gl/maps/1TkGLcMhs1NXqYy18" target="_blank"
+                                    rel="noreferrer noopener nofollow">
+                                    <span>м. Київ, пр-т Лесі Українки, 26</span> </a></li>
+                            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="address__cont">
+                    <h2 class="conteiner__titel"> Приєднуйтесь</h2>
+                    <ul class="list__icon address">
+    
+                        <li class="list__item"> <a href="https://www.instagram.com" class="address__link" target="_blank"
+                                rel="noreferrer noopener"> <svg class="icon__img">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item"><a href="https://twitter.com/?lang=ru" class="address__link" target="_blank"
+                                rel="noreferrer noopener"> <svg class="icon__img">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item"><a href="https://uk-ua.facebook.com" class="address__link" target="_blank"
+                                rel="noreferrer noopener"> <svg class="icon__img">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item"><a href="https://ua.linkedin.com" class="address__link" target="_blank"
+                                rel="noreferrer noopener"> <svg class="icon__img">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+    
+                        </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="address__cont">
-                <h2 class="conteiner__titel"> Приєднуйтесь</h2>
-                <ul class="list__icon address">
-
-                    <li class="list__item"> <a href="https://www.instagram.com" class="address__link" target="_blank"
-                            rel="noreferrer noopener"> <svg class="icon__img">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item"><a href="https://twitter.com/?lang=ru" class="address__link" target="_blank"
-                            rel="noreferrer noopener"> <svg class="icon__img">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item"><a href="https://uk-ua.facebook.com" class="address__link" target="_blank"
-                            rel="noreferrer noopener"> <svg class="icon__img">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item"><a href="https://ua.linkedin.com" class="address__link" target="_blank"
-                            rel="noreferrer noopener"> <svg class="icon__img">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
+    
             <div class="address__form">
                 <h2>Підпишіться на розсилку</h2>
-                <form>
+                <form class="footer-form">
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail">
                     <button type="submit"><span class="button-text">Підписатися</span><span class="button-svg"><svg>
@@ -322,9 +325,6 @@
                             </svg></span></button>
                 </form>
             </div>
-        </div>
-
-
     </footer>
 <script src="./js/menu.js"></script>
 
