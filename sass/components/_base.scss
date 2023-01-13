@@ -484,20 +484,36 @@ margin-bottom: 0;}
     }
 }
 
-.icon__mail {
-    margin-right: 10px;
-    height: 12px;
-    width: 16px;
+.icon__mail,.icon__phone {
+    margin-right: 8px;
+//    padding-top: 2px;
+
     fill: currentColor;
+    @media screen and (min-width:1200px) {
+            margin-right: 10px;
+        }
+}
+.icon__mail {
+@media screen and (min-width:768px) {
+            
+            margin-top: 1px;
+        }
+@media screen and (min-width:1200px) {
+        width: 16px;
+        height: 12px;
+        margin-top: 1px;
+    }
 }
 
 .icon__phone {
-
-    margin-right: 10px;
-    height: 16px;
-    width: 10px;
-    fill: currentColor;
+    
+    @media screen and (min-width:1200px) {
+        width: 10px;
+        height: 16px;
+    }
 }
+
+ 
 
 .icon__link:hover .icon__image,
 .icon__link:focus .icon__image {
